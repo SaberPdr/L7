@@ -23,7 +23,7 @@ json 数据解析使用对应 JSON parser
 - x `string` 点数据表示 经度
 - y `string` 点数据表示 纬度
 - x1 `string` 经度
-- x2 `string` 纬度
+- y1 `string` 纬度
 
 如果数据是点数据，只需要设置 x,y 字段即可
 
@@ -43,7 +43,7 @@ layer.source(data, {
 
 ### 通用解析方式
 
-可也解析任意复杂的点，线面
+可以解析任意复杂的点，线，面
 
 - type `string` 必选 `json`
 - coordinates `array` 必选，主要用于表达比较复杂的格式，等同于 geojson coordinates 属性
@@ -63,7 +63,7 @@ layer.source(data, {
 
 #### 简易解析
 
-- type json
+- type: json
 - x: 经度字段
 - y: 纬度字段
 
